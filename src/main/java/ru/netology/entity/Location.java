@@ -1,5 +1,8 @@
 package ru.netology.entity;
 
+/**
+ * информация о местонахождении
+ */
 public class Location {
 
     private final String city;
@@ -31,5 +34,12 @@ public class Location {
 
     public int getBuiling() {
         return builing;
+    }
+
+    @Override
+    public String toString() {
+        return "Location{" +
+               "city='" + city + '\'' +
+               '}';
     }
 }
