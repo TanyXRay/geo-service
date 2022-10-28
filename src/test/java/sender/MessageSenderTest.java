@@ -48,7 +48,7 @@ public class MessageSenderTest {
         MessageSender messageSender = new MessageSenderImpl(geoService, localizationService);
         String message = messageSender.send(headers);
 
-        assertEquals(message, textRuExpected);
+        assertEquals(textRuExpected, message);
     }
 
     @Test
